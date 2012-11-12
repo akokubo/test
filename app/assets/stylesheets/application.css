@@ -74,3 +74,24 @@
 	width: auto;
 	padding: 15px;
 }
+
+#usermenu {
+	height: 20px;
+}
+
+#usermenu ul {
+	height: 20px;
+	list-style: none;
+	float: right;
+}
+
+#usermenu ul li {
+	float: left;
+	height: 20px;
+}
+
+#usermenu ul li a {
+	font-size: 70%;
+	padding: 3px;
+	height: 20px;
+}

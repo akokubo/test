@@ -1,5 +1,19 @@
 <h1>Ec Site</h1>
-
+<div id="usermenu">
+	<ul>
+		<% if current_user -%>
+			<% if current_user.name -%>
+				<li class="username">ようこそ<%= current_user.name -%>さん</li>
+			<% end -%>
+			<li><%= link_to "マイページ", "#" -%></li>
+			<li><%= link_to "ログアウト", [:destroy, :user_session] -%></li>
+		<% else -%>
+			<li><%= link_to "登録", [:new, :user_registration] -%></li>
+			<li><%= link_to "パスワード忘れ", [:new, :user_password] -%></li>
+			<li><%= link_to "登録確認メール再送信", [:new, :user_confirmation] -%></li>
+		<% end -%>
+	</ul>
+</div>
 <ul class="menu">
 	<li><%= link_to "トップページ", "#" -%></li>
 	<li><%= link_to "商品一覧", "#" -%></li>
