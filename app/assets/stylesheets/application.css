@@ -95,3 +95,28 @@
 	padding: 3px;
 	height: 20px;
 }
+
+#devise {
+	width: 400px;
+	padding: 1px;
+	margin: 1px;
+	background-color: #c0c0c0;
+}
+
+#devise td,
+#devise th {
+	background-color: #fff;
+	padding: 5px;
+}
+
+#devise th {
+	text-align: left;
+}
+
+#devise td.remember {
+	font-size: 5%;
+}
+
+#devise td.login {
+	text-align: center;
+}
