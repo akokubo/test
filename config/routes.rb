@@ -1,4 +1,6 @@
 EcSite::Application.routes.draw do
+  resources :items, :only => [:index, :show]
+
   devise_for :users
 
   root :to => "welcome#index"

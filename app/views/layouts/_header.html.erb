@@ -8,6 +8,7 @@
 			<li><%= link_to "マイページ", "#" -%></li>
 			<li><%= link_to "ログアウト", [:destroy, :user_session] -%></li>
 		<% else -%>
+			<li><%= link_to "ログイン", [:new, :user_session] -%></li>
 			<li><%= link_to "登録", [:new, :user_registration] -%></li>
 			<li><%= link_to "パスワード忘れ", [:new, :user_password] -%></li>
 			<li><%= link_to "登録確認メール再送信", [:new, :user_confirmation] -%></li>
